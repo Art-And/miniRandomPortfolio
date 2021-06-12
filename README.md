@@ -1,1 +1,1 @@
-# js-portfolio
+# Mini JS vanilla portfolio with webpack

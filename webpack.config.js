@@ -8,6 +8,17 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'] //you have to add the extension that require you
-  }
+  },
+  module: {
+    rules :[
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }
+    ],
+  },
 }
 
